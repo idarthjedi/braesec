@@ -8,7 +8,7 @@ which could be encoded and decoded into a cipher text.
 The following outlines how to use this code to encode and decode the cipher text
 
 ### Encode
-braesec.py -e "Your text here"
+braesec.py "Your text here"
 
 ### Decode
 Coming soon!
