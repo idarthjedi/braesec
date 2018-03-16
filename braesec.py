@@ -29,7 +29,7 @@ def encode():
         # binNum = bin(int.from_bytes(aChar.encode(), 'big'))
         intNum = int.from_bytes(aChar.encode(), 'big')
 
-        print(intNum)
+        # print(intNum)
         if intNum != 32:
 
             for loopCount in range(0, 5):
