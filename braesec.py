@@ -1,4 +1,7 @@
+#!/usr/bin/env python
 import binascii
+# from sys import argv
+
 """
 -:X'.
 """
@@ -67,10 +70,19 @@ def encode():
 
 
 def decode():
+    textToConvert = input("Please enter your text to convert: ")
+    # Should check to see if the input is zero length 
+    textOutput = textToConvert.split()
+
+    for aChar in textOutput:
+        print(aChar)    
+
     pass
 
 
 def main():
+#    arguments = getopts(argv)
+#    print(len(arguments))
     encode()
 
 
