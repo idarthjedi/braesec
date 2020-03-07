@@ -41,18 +41,19 @@ def encode():
             for loopCount in range(0, 5):
                 letterMap[loopCount] = is_set(intNum, loopCount)
 
-            if letterMap[4]:
-                output += "-"
-
             if letterMap[1]:
                 if letterMap[0]:
                     output += ":"
                 else:
-                    output += "'"
+                    output += "."
             elif letterMap[0]:
-                output += "."
-
-            output += "X"
+                output += "'"
+            else:
+                output += "|"
+            if letterMap[4]:
+                output += "o"
+            else:
+                output += "X"
 
             if letterMap[3]:
                 if letterMap[2]:
@@ -61,33 +62,36 @@ def encode():
                     output += "'"
             elif letterMap[2]:
                 output += "."
+            else:
+                output += "|"
 
             textOutput += output + " "
 
-        else:
-            textOutput += "[SPACE] "
-            continue
+        #else:
+        #    textOutput += "[SPACE] "
+        #    continue
 
     print(textOutput)
     pass
 
 
 def decode():
-    textToConvert = input("Please enter your text to convert: ")
-    # Should check to see if the input is zero length 
-    textOutput = textToConvert.split()
-
-    for aChar in textOutput:
-        print(aChar)    
-
-    pass
-
-
+    decoded = ""
+    ttc = str(input("Please enter your text to convert(space at the beggining): "))
+    value = {" ": 0,"x": 0,"X": 0,"|": 0,"'": 1, ".": 2,":": 3, "o": 16}
+    valuel = {"'": 8,".": 4,":": 12,"|": 0," ": 0,}
+    while len(ttc) > 2:
+        curchr = ttc[0:4]
+        ttc =ttc[4:]
+        newchr = chr(96 + value[curchr[0]] + value[curchr[1]] + valuel[curchr[2]] + valuel[curchr[3]])
+        decoded += newchr
+    print(decoded)
 def main():
-#    arguments = getopts(argv)
-#    print(len(arguments))
-    encode()
-
-
+    run = str(input("do you want to encode(e) or decode(d): "))
+    if run == "e":
+        encode()
+    elif run == "d":
+        decode()
+    else:
+        print("pleas enter d or e.")
 main()
-
