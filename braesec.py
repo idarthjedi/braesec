@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+#Testing updates on the forked version @braebraesean's github page.
+#Testing a second update on the local branch
 import binascii
 # from sys import argv
 
