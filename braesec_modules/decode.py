@@ -4,6 +4,7 @@ def decode(bsec):
     while len(bsec) > 0:
         codechr = getchr(bsec)
         bsec = bsec[len(codechr):]
+        print(codechr)
         try:
             #converts the braesec char and adds it to output
             output += convert(codechr)
@@ -24,7 +25,7 @@ def getchr(bsec):
 
 #coverts the braesec char to alphanumeric via assgning them a ascii value
 def convert(codechr):
-    find = {"'": 1, ".": 2,":": 3,"x": 0,"o": 16," ": 0,}
+    find = {"'": 1, ".": 2,":": 3,"x": 0,"o": 16," ": 0,"X": 0,"O": 16,}
     findr = {".": 4,"'": 8,":": 12," ": 0,}
     ascv = 96
     right = 0
