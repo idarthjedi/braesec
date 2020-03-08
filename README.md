@@ -8,10 +8,17 @@ which could be encoded and decoded into a cipher text.
 The following outlines how to use this code to encode and decode the cipher text
 
 ### Encode
+
+**Braeden** this is where you need to write your specification for encoding.
+
 braesec.py "Your text here"
 
 ### Decode
 Coming soon!
 
 #### Summary
+
+**Braeden** this is where you need to update and create some examples based on the expected 
+input and output.
+
 X' .X -'X. .X. [SPACE] 'X. -.X. 'X:
