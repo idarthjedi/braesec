@@ -23,7 +23,7 @@ def main():
         output = decoder.decode(ttc)
         print(output)
     else:
-        print("pleas enter d or e.")
+        print("please enter d or e.")
 
 
 main()
