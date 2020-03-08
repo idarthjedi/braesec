@@ -54,3 +54,6 @@ fabric.properties
 
 # ignore intelliJ IML
 *.iml
+
+# ignore __pycache__
+braesec_modules/__pycache__/
