@@ -15,15 +15,15 @@ import braesec_modules.decode as decoder
 def main():
     run = str(input("do you want to encode(e) or decode(d): "))
     if run == "e":
-        texttoconvert = input("Please enter your text to convert: ")
+        texttoconvert = input("Please enter the text you would like to encode: ")
         output = encoder.encode(texttoconvert)
         print(output)
     elif run == "d":
-        ttc = str(input("Please enter your text to convert(space at the beggining): "))
+        ttc = str(input("Please enter the brasec would like to decode: "))
         output = decoder.decode(ttc)
         print(output)
     else:
-        print("pleas enter d or e.")
+        print("please enter d or e.")
 
 
 main()
