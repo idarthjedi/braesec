@@ -5,7 +5,7 @@ def decode(bsec):
         codechr = getchr(bsec)
         bsec = bsec[len(codechr):]
         codechr = codechr.lower()
-        print(codechr)
+#        print(codechr)
         try:
             #converts the braesec char and adds it to output
             output += convert(codechr)
