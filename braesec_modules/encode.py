@@ -15,9 +15,9 @@ def encode(string_to_encode):
 
         letterMap = [0, 0, 0, 0, 0]
         # will translate it to this:
-        #  1 3
+        #  0 3
         # 4
-        #  0 2
+        #  1 2
         output = ""
 
         # binNum = bin(int.from_bytes(aChar.encode(), 'big'))
